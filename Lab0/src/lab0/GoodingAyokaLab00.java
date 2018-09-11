@@ -20,7 +20,10 @@ public class GoodingAyokaLab00 implements Lab00 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        GoodingAyokaLab00 lab = new GoodingAyokaLab00();
+        System.out.println(lab.problem0(9999));
+        System.out.println(lab.problem1(9999));
+        System.out.println(lab.problem2());
     }
 
     @Override
@@ -52,7 +55,25 @@ public class GoodingAyokaLab00 implements Lab00 {
 
     @Override
     public long problem2() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         LinkedList <String> linList = new LinkedList<>();
+         ArrayList <String> arrList = new ArrayList<>();
+         long start = System.currentTimeMillis();
+        for(int i = 0; i<=99999; i++){
+            linList.add(Integer.toString(i));
+            
+        }
+        long end = System.currentTimeMillis();
+        System.out.println(end-start);
+        
+        long start2 = System.currentTimeMillis();
+        for(int i = 0; i<=99999; i++){
+            
+            arrList.add(Integer.toString(i));
+        }
+        long end2 = System.currentTimeMillis();
+        
+        
+        return  end2-start2;
     }
 
 }
