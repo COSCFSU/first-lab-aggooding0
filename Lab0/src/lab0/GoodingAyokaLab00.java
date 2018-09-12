@@ -75,5 +75,6 @@ public class GoodingAyokaLab00 implements Lab00 {
         
         return  end2-start2;
     }
+    
 
 }
